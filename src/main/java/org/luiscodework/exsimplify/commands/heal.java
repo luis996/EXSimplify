@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 public class heal implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        //Bukkit.getLogger().info("[EXSimplifyLogs] " + sender.getName() + " tried to run /heal command!.");
+        Bukkit.getLogger().info("[EXSimplifyLogs] " + sender.getName() + " tried to run /heal command!.");
         if (args.length == 0) {
             if (!sender.hasPermission("exsimplify.heal")) {
                 sender.sendMessage(Component.text("You do not have permission to run this command.").color(NamedTextColor.RED));

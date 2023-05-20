@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 public class fly implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        //Bukkit.getLogger().info("[EXSimplifyLogs]" + sender.getName() + " tired to run /fly command!.");
+        Bukkit.getLogger().info("[EXSimplifyLogs]" + sender.getName() + " tired to run /fly command!.");
         if (args.length == 0) {
             if (!sender.hasPermission("exsimplify.fly")) {
                 sender.sendMessage(Component.text("You do not have permission to run this command.").color(NamedTextColor.RED));
