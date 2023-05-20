@@ -7,3 +7,25 @@ commands:
     description: Enables fly to the user who did run it, or the selected target.
     usage: /fly [player]
     aliases: [f]
+  heal:
+    description: Heals the user who did run it, or the selected target.
+    usage: /heal [player]
+    aliases: [h]
+permissions:
+  exsimplify.fly:
+    description: This permission allows users to use the /fly command.
+    default: op
+    children:
+      exsimplify.fly.others: true
+  exsimplify.heal:
+    description: This permission allows users to use the /heal command.
+    default: op
+    children:
+      exsimplify.heal.others: true
+  exsimplify.fly.others:
+    description: This permission allows users to use the /fly command on others.
+    default: op
+  exsimplify.heal.others:
+    description: this permission allows users to use the /heal command on others.
+    default: op
+softdepend: [LuckPerms]
