@@ -10,6 +10,10 @@ import org.bukkit.entity.Player;
 public class fly implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (!sender.hasPermission("exsimplify.fly")) {
+            sender.sendMessage(Component.text("You do not have permission to execute this command.").color(NamedTextColor.RED));
+            return true;
+        }
         if (args.length == 0) {
             if (!(sender instanceof Player)) {
                 sender.sendMessage(Component.text("Only players can run this command.").color(NamedTextColor.RED));
