@@ -1,3 +1,4 @@
 org\luiscodework\exsimplify\EXSimplify.class
+org\luiscodework\exsimplify\commands\heal.class
 org\luiscodework\exsimplify\listeners\PlayerHandler.class
 org\luiscodework\exsimplify\commands\fly.class
