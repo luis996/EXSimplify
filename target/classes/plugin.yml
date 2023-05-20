@@ -1,5 +1,5 @@
 name: EXSimplify
-version: '1.0-SNAPSHOT'
+version: '1.0.0-LoggingDisabled'
 main: org.luiscodework.exsimplify.EXSimplify
 api-version: 1.19
 commands:

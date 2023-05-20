@@ -2,6 +2,7 @@ package org.luiscodework.exsimplify.commands;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -10,6 +11,7 @@ import org.bukkit.entity.Player;
 public class fly implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        //Bukkit.getLogger().info("[EXSimplifyLogs]" + sender.getName() + " tired to run /fly command!.");
         if (args.length == 0) {
             if (!sender.hasPermission("exsimplify.fly")) {
                 sender.sendMessage(Component.text("You do not have permission to run this command.").color(NamedTextColor.RED));

@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 public class heal implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        //Bukkit.getLogger().info("[EXSimplifyLogs] " + sender.getName() + " tried to run /heal command!.");
         if (args.length == 0) {
             if (!sender.hasPermission("exsimplify.heal")) {
                 sender.sendMessage(Component.text("You do not have permission to run this command.").color(NamedTextColor.RED));
@@ -22,8 +23,6 @@ public class heal implements CommandExecutor {
                 return true;
             }
             Player player = (Player) sender;
-            Bukkit.getLogger().info("[EXSimplify Dev] getValue getDefaultValue");
-            Bukkit.getLogger().info("[EXSimplify Dev] " + player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() + " " + player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getDefaultValue());
             player.setHealth(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
             player.setFoodLevel(20);
             player.setSaturation(20);
