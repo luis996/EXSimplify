@@ -1,0 +1,9 @@
+name: EXSimplify
+version: '1.0-SNAPSHOT'
+main: org.luiscodework.exsimplify.EXSimplify
+api-version: 1.19
+commands:
+  fly:
+    description: Enables fly to the user who did run it, or the selected target.
+    usage: /fly [player]
+    aliases: [f]
