@@ -6,7 +6,7 @@
 
     <groupId>org.luiscodework</groupId>
     <artifactId>EXSimplify</artifactId>
-    <version>1.0.0-LoggingDisabled</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>EXSimplify</name>
