@@ -22,10 +22,4 @@ permissions:
     default: op
     children:
       exsimplify.heal.others: true
-  exsimplify.fly.others:
-    description: This permission allows users to use the /fly command on others.
-    default: op
-  exsimplify.heal.others:
-    description: this permission allows users to use the /heal command on others.
-    default: op
 softdepend: [LuckPerms]
