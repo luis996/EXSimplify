@@ -2,6 +2,7 @@ package org.luiscodework.exsimplify;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.luiscodework.exsimplify.commands.fly;
+import org.luiscodework.exsimplify.commands.heal;
 import org.luiscodework.exsimplify.listeners.PlayerHandler;
 
 public final class EXSimplify extends JavaPlugin {
@@ -10,6 +11,7 @@ public final class EXSimplify extends JavaPlugin {
     public void onEnable() {
         new PlayerHandler(this);
         getCommand("fly").setExecutor(new fly());
+        getCommand("heal").setExecutor(new heal());
 
         Bukkit.getLogger().info("[EXSimplify] Enabled");
     }
